@@ -40,31 +40,40 @@ def process():
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
 	listFileContentFinal.sort()
-	pre_content = ''
-	pre_title = ''
+
 	index = -1
 	numDoc = 0
 	for fileContentFinal in listFileContentFinal:
 		print fileContentFinal
-		index += 1
-		if index == 0:
-			continue
+		# index += 1
+		# if index == 0:
+		# 	continue
 		f = codecs.open(folderContentFinal + fileContentFinal, encoding='utf-8-sig')
+		pre_content = ''
+		pre_title = ''
 		for document in f:
+			ok = 0
 			array = re.split('----', document)
 			if len(array) < 2:
 				continue  
 			content = array[1]
+
 			array_domain_title = re.split('\t', array[0])
 			if len(array_domain_title) < 2:
 				continue
 			title = array_domain_title[1]
+			# print 'pre_title : ', pre_title, 'title : ', title
+			# print 'pre_content : ', pre_content, 'content : ', content
 			if title == pre_title or content == pre_content:
 				continue
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
+				if ok == 1:
+					break
 				if content.find(keyword) != -1 and title.find(keyword) != -1:
 					for notKeyword in listNotKeyword:
+						if ok == 1:
+							break
 						if content.find(notKeyword) == -1:
 							# content = content.encode('utf-8-sig')
 							numDoc += 1
@@ -72,6 +81,7 @@ def process():
 							pre_content = content
 							pre_title = title
 							fOutput.write(content)
+							ok = 1
 		f.close()
 	fOutput.close()
 
@@ -94,7 +104,3 @@ if __name__ == '__main__':
 		done = time.time()
 		elapsed = done - start
 		print(elapsed)
-
-
-
-
