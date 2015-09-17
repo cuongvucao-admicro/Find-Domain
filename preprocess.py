@@ -16,7 +16,7 @@ from os.path import isfile, join
 listKeyword = {}
 listNotKeyword = {}
 
-domain = 'smartphone/'
+domain = ''
 
 def readKeyword():
 	f = codecs.open(domain + 'keyword.txt', encoding = 'utf-8-sig')
@@ -78,10 +78,21 @@ def process():
 
 
 if __name__ == '__main__':
+
+	domains = [ f for f in listdir('domain/') ]
+	domains.sort()
 	start = time.time()
-	readKeyword()
-	readNotKeyword()
-	process()
-	done = time.time()
-	elapsed = done - start
-	print(elapsed)
+
+	for key in domains:
+		domain = 'domain/' + key + '/'
+		print domain
+		readKeyword()
+		readNotKeyword()
+		process()
+		done = time.time()
+		elapsed = done - start
+		print(elapsed)
+
+
+
+
