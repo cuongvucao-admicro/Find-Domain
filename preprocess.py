@@ -86,6 +86,8 @@ if __name__ == '__main__':
 	for key in domains:
 		domain = 'domain/' + key + '/'
 		print domain
+		listKeyword = {}
+		listNotKeyword = {}
 		readKeyword()
 		readNotKeyword()
 		process()
