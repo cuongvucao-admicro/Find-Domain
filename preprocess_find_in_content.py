@@ -35,7 +35,7 @@ def readNotKeyword():
 	f.close()
 
 def process():
-	fOutput = codecs.open(domain + 'result_notfilter.txt', 'w', encoding = 'utf-8-sig')
+	fOutput = codecs.open(domain + 'result_find_in_content.txt', 'w', encoding = 'utf-8-sig')
 	folderContentFinal = './../../../bigdata/'
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
@@ -67,12 +67,12 @@ def process():
 			if content == pre_content:
 				num_equal += 1
 				print 'num_equal : ', num_equal
-				# continue
+				continue
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
 				if ok == 1:
 					break
-				if content.find(keyword) != -1 and title.find(keyword) != -1:
+				if content.find(keyword) != -1:
 					for notKeyword in listNotKeyword:
 						if ok == 1:
 							break

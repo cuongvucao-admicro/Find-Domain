@@ -1,14 +1,21 @@
 macbook
 MacBook
+MACBOOK
 ThinkPad
 thinkpad
+THINKPAD
 Dell
 dell
+DELL
 laptop
 Laptop
+LAPTOP
 Máy tính
 máy tính
+MÁY TÍNH
 Acer
 acer
+ACER
 Vaio
 vaio
+VAIO
