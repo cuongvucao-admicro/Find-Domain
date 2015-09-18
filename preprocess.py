@@ -66,7 +66,7 @@ def process():
 			# print 'pre_content : ', pre_content, 'content : ', content
 			if title == pre_title or content == pre_content:
 				num_equal += 1
-				print 'num_equal : ', nu_mequal
+				print 'num_equal : ', num_equal
 				continue
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
