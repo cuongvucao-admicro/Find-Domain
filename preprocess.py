@@ -77,6 +77,7 @@ def process():
 							# content = content.encode('utf-8-sig')
 							numDoc += 1
 							print numDoc
+							print 'pre_title : ', title, title == pre_title
 							pre_content = content
 							pre_title = title
 							fOutput.write(content)
