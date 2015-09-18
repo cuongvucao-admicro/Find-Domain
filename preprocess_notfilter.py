@@ -64,7 +64,7 @@ def process():
 				continue
 			title = array_domain_title[1]
 			# print 'pre_content : ', pre_content, 'content : ', content
-			if title == pre_title or content == pre_content:
+			if content == pre_content:
 				num_equal += 1
 				print 'num_equal : ', num_equal
 				# continue
@@ -76,15 +76,19 @@ def process():
 					for notKeyword in listNotKeyword:
 						if ok == 1:
 							break
+
 						if content.find(notKeyword) == -1:
 							# content = content.encode('utf-8-sig')
 							numDoc += 1
 							print numDoc
 							print '----------'
-							pre_content = content
-							pre_title = title
+							
+							content = content.replace('\n', '')
+							content += '\n'
 							fOutput.write(title + '============' + content)
 							ok = 1
+			pre_content = content
+			pre_title = title
 		f.close()
 	fOutput.close()
 
