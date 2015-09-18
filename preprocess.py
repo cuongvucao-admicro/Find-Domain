@@ -83,7 +83,7 @@ def process():
 							print '----------'
 							pre_content = content
 							pre_title = title
-							fOutput.write(title + ' ' +c ontent)
+							fOutput.write(title + ' ' + content)
 							ok = 1
 		f.close()
 	fOutput.close()
