@@ -66,7 +66,7 @@ def process():
 			# print 'pre_content : ', pre_content, 'content : ', content
 			if title == pre_title or content == pre_content:
 				num_equal += 1
-				print 'num_equal : ', num_equal
+				print 'num_equal : ', nu_mequal
 				continue
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
@@ -83,7 +83,7 @@ def process():
 							print '----------'
 							pre_content = content
 							pre_title = title
-							fOutput.write(title + ' ' + content)
+							fOutput.write(title + ' ' +c ontent)
 							ok = 1
 		f.close()
 	fOutput.close()
