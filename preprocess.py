@@ -36,7 +36,7 @@ def readNotKeyword():
 
 def process():
 	fOutput = codecs.open(domain + 'result.txt', 'w', encoding = 'utf-8-sig')
-	folderContentFinal = './../../../bigdata/'
+	folderContentFinal = './../../bigdata/'
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
 	listFileContentFinal.sort()
@@ -45,9 +45,9 @@ def process():
 	numDoc = 0
 	for fileContentFinal in listFileContentFinal:
 		print fileContentFinal
-		# index += 1
-		# if index == 0:
-		# 	continue
+		index += 1
+		if index == 0:
+			continue
 		f = codecs.open(folderContentFinal + fileContentFinal, encoding='utf-8-sig')
 		pre_content = ''
 		pre_title = ''
@@ -62,7 +62,6 @@ def process():
 			if len(array_domain_title) < 2:
 				continue
 			title = array_domain_title[1]
-			# print 'pre_title : ', pre_title, 'title : ', title
 			# print 'pre_content : ', pre_content, 'content : ', content
 			if title == pre_title or content == pre_content:
 				continue
