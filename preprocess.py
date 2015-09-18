@@ -64,6 +64,7 @@ def process():
 			title = array_domain_title[1]
 			# print 'pre_content : ', pre_content, 'content : ', content
 			if title == pre_title or content == pre_content:
+				print 'Bang nhau'
 				continue
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
@@ -77,7 +78,9 @@ def process():
 							# content = content.encode('utf-8-sig')
 							numDoc += 1
 							print numDoc
-							print 'pre_title : ', pre_title, 'title : ', title, title == pre_title
+							print pre_content
+							print content
+							print '----------'
 							pre_content = content
 							pre_title = title
 							fOutput.write(content)
