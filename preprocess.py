@@ -36,7 +36,7 @@ def readNotKeyword():
 
 def process():
 	fOutput = codecs.open(domain + 'result.txt', 'w', encoding = 'utf-8-sig')
-	folderContentFinal = './../../bigdata/'
+	folderContentFinal = './../../../bigdata/'
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
 	listFileContentFinal.sort()
