@@ -16,7 +16,6 @@ from os.path import isfile, join
 
 listKeyword = {}
 listNotKeyword = {}
-listcontent = {}
 
 domain = ''
 
@@ -77,7 +76,6 @@ def process():
 						print '----------'
 						content = content.replace('\n', '')
 						content += '\n'
-						listcontent[content] = 1
 						fOutput.write(source + '============' + title + '============' + content)
 						ok = 1
 
