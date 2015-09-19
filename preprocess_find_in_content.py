@@ -38,7 +38,7 @@ def readNotKeyword():
 	f.close()
 
 def process():
-	fOutput = codecs.open(domain + 'result_find_in_title.txt', 'w', encoding = 'utf-8')
+	fOutput = codecs.open(domain + 'result_find_in_content.txt', 'w', encoding = 'utf-8')
 	folderContentFinal = './../../../bigdata/'
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
@@ -73,7 +73,7 @@ def process():
 							ok = 1
 					if ok == 0:
 						numDoc += 1
-						print domain, numDoc
+						print 'in CONTENT : ', domain, numDoc
 						print '----------'
 						content = content.replace('\n', '')
 						content += '\n'

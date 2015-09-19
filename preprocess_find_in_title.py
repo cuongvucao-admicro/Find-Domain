@@ -73,7 +73,7 @@ def process():
 							ok = 1
 					if ok == 0:
 						numDoc += 1
-						print domain, numDoc
+						print 'in TITLE  : ', domain, numDoc
 						print '----------'
 						content = content.replace('\n', '')
 						content += '\n'
