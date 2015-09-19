@@ -41,7 +41,7 @@ def process():
 	fOutput = codecs.open(domain + 'result_find_in_title.txt', 'w', encoding = 'utf-8')
 	folderContentFinal = './../../../bigdata/'
         
-	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
+	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) and f[0] != '.' ]
 	listFileContentFinal.sort()
 
 	index = -1
