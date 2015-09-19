@@ -21,24 +21,24 @@ listcontent = {}
 domain = ''
 
 def readKeyword():
-	f = codecs.open(domain + 'keyword.txt', encoding = 'utf-8-sig')
+	f = codecs.open(domain + 'keyword.txt', encoding = 'utf-8')
 	for keyword in f:
 		keyword = keyword.replace('\n', '')
-		# keyword = keyword.encode('utf-8-sig')
+		# keyword = keyword.encode('utf-8')
 		listKeyword[keyword] = 1
 	f.close()
 
 def readNotKeyword():
-	f = codecs.open(domain + 'not_keyword.txt', encoding = 'utf-8-sig')
+	f = codecs.open(domain + 'not_keyword.txt', encoding = 'utf-8')
 	for keyword in f:
 		keyword = keyword.replace('\n', '')
-		# keyword = keyword.encode('utf-8-sig')
+		# keyword = keyword.encode('utf-8')
 		listNotKeyword[keyword] = 1
 
 	f.close()
 
 def process():
-	fOutput = codecs.open(domain + 'result_find_in_title.txt', 'w', encoding = 'utf-8-sig')
+	fOutput = codecs.open(domain + 'result_find_in_title.txt', 'w', encoding = 'utf-8')
 	folderContentFinal = './../../../bigdata/'
         
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
@@ -49,9 +49,7 @@ def process():
 	num_equal = 0
 	for fileContentFinal in listFileContentFinal:
 		index += 1
-		# if index == 0:
-		# 	continue
-		f = codecs.open(folderContentFinal + fileContentFinal, encoding='utf-8-sig')
+		f = codecs.open(folderContentFinal + fileContentFinal, encoding='utf-8')
 		print fileContentFinal
 		for document in f:
 			ok = 0
@@ -64,14 +62,14 @@ def process():
 				continue
 			title = array_domain_title[1]
 			source = array_domain_title[0]
-			# content = content.encode('utf-8-sig')
+			# content = content.encode('utf-8')
 			for keyword in listKeyword:
 				if ok == 1:
 					break
 				if keyword in content:
 					for notKeyword in listNotKeyword:
 						if notKeyword in content:
-							notKeyword = notKeyword.encode('utf-8-sig')
+							notKeyword = notKeyword.encode('utf-8')
 							ok = 1
 					if ok == 0:
 						numDoc += 1
