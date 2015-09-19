@@ -5,9 +5,6 @@ Iphone
 iPad
 IPAD
 Ipad
-iPod
-IPOD
-ipod
 tablet
 TABLET
 Tablet
@@ -29,9 +26,6 @@ BlackBerry
 blackberry
 Blackberry
 BLACKBERRY
-oppo
-Oppo
-OPPO
 Huawei
 huawei
 BPhone
@@ -73,9 +67,9 @@ MACBOOK
 ThinkPad
 thinkpad
 THINKPAD
-Dell
-dell
-DELL
+ Dell 
+ dell 
+ DELL 
 laptop
 Laptop
 LAPTOP
