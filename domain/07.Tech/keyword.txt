@@ -67,3 +67,66 @@ Android
 Windows Phone
 windows phone
 WINDOWS PHONE
+macbook
+MacBook
+MACBOOK
+ThinkPad
+thinkpad
+THINKPAD
+Dell
+dell
+DELL
+laptop
+Laptop
+LAPTOP
+Máy tính
+máy tính
+MÁY TÍNH
+Acer
+acer
+ACER
+Vaio
+vaio
+VAIO
+Phần mềm
+phần mềm
+wifi
+WIFI
+Wifi
+trang web
+Trang web
+Website
+website
+MS Office
+tập tin
+Tập tin
+Video
+video
+audio
+Audio
+download
+Download
+mp3
+Mp3
+windows
+Windows
+chuột
+Chuột
+Bàn phím
+bàn phím
+Firefox
+firefox
+Chrome
+chrome
+trình duyệt
+Trình duyệt
+hình nền
+Hình nền
+điện tử
+Điện tử
+Mobile
+mobile
+Security
+security
+phần cứng
+Phần cứng

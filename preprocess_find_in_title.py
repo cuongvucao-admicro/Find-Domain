@@ -47,7 +47,6 @@ def process():
 	numDoc = 0
 	num_equal = 0
 	for fileContentFinal in listFileContentFinal:
-		
 		index += 1
 		# if index == 0:
 		# 	continue
@@ -67,7 +66,7 @@ def process():
 			for keyword in listKeyword:
 				if ok == 1:
 					break
-				if keyword in content:
+				if keyword in title and keyword in content:
 					for notKeyword in listNotKeyword:
 						if notKeyword in content:
 							notKeyword = notKeyword.encode('utf-8-sig')
