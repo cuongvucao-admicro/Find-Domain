@@ -75,7 +75,7 @@ def process():
 							ok = 1
 					if ok == 0:
 						numDoc += 1
-						print 'in CONTENT : ', domain, numDoc
+						print 'in TITLE : ', domain, numDoc
 						print '----------'
 						content = content.replace('\n', '')
 						fOutput.write(source + '============' + title + '============' + content + '-------------' + 'Keyword match: ' + keywordMatch + '\n')
