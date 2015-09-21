@@ -1,10 +1,8 @@
-đội bóng
 giết người 
 tai nạn 
 ngoại tình 
 xác chết
 thi thể
-Đội bóng
 Giết người 
 Tai nạn 
 Xác chết
@@ -49,4 +47,32 @@ Hang ổ
 Án mạng
 tội phạm
 Tội phạm
-
+lừa đảo
+Lừa đảo
+đánh bom
+Đánh bom
+ly hôn
+Ly hôn
+li hôn
+Li hôn
+li dị
+Li dị
+ly dị
+Ly dị
+Pháp Luật
+pháp luật
+an ninh
+An ninh
+tử hình
+Tử hình
+cướp
+Cướp
+TAND
+phạm tội
+Phạm tội
+Tội phạm
+tội phạm
+tạm giam
+Tạm giam
+Công an
+công an
