@@ -15,7 +15,7 @@ from os.path import isfile, join
 
 listKeyword = {}
 listNotKeyword = {}
-listcontent = {}
+listSource = {}
 
 domain = ''
 
@@ -39,7 +39,7 @@ def readNotKeyword():
 def process():
 	fOutput = codecs.open(domain + 'result_find_in_title.txt', 'w', encoding = 'utf-8-sig')
 	folderContentFinal = './../../../bigdata/'
-        
+
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) ]
 	listFileContentFinal.sort()
 
@@ -47,9 +47,8 @@ def process():
 	numDoc = 0
 	num_equal = 0
 	for fileContentFinal in listFileContentFinal:
+		
 		index += 1
-		# if index == 0:
-		# 	continue
 		f = codecs.open(folderContentFinal + fileContentFinal, encoding='utf-8-sig')
 		print fileContentFinal
 		for document in f:
@@ -62,11 +61,16 @@ def process():
 			if len(array_domain_title) < 2:
 				continue
 			title = array_domain_title[1]
+			source = array_domain_title[0]
+			if source in listSource:
+				continue
+			keywordMatch = ''
 			# content = content.encode('utf-8-sig')
 			for keyword in listKeyword:
 				if ok == 1:
 					break
 				if keyword in title and keyword in content:
+					keywordMatch = keyword
 					for notKeyword in listNotKeyword:
 						if notKeyword in content:
 							notKeyword = notKeyword.encode('utf-8-sig')
@@ -76,22 +80,26 @@ def process():
 						print numDoc
 						print '----------'
 						content = content.replace('\n', '')
-						content += '\n'
-						listcontent[content] = 1
-						fOutput.write(title + '============' + content)
+						fOutput.write(source + '============' + title + '============' + content + '-------------' + 'Keyword match: ' + keywordMatch + '\n')
 						ok = 1
 
 		f.close()
 	fOutput.close()
 
-
+def readSourceRemove():
+	f = codecs.open(domain + 'source_remove.txt', encoding = 'utf-8-sig')
+	for keyword in f:
+		keyword = keyword.replace('\n', '')
+		# keyword = keyword.encode('utf-8-sig')
+		listSource[keyword] = 1
+	f.close()
 
 if __name__ == '__main__':
 
 	domains = [ f for f in listdir('domain/') ]
 	domains.sort()
 	start = time.time()
-
+	readSourceRemove()
 	for key in domains:
 		domain = 'domain/' + key + '/'
 		print domain

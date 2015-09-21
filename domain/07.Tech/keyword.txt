@@ -52,9 +52,6 @@ zenfone
 Xiaomi
 XIAOMI
 xiaomi
-điện thoại
-Điện thoại
-ĐIỆN THOẠI
 máy tính bảng
 Máy tính bảng
 MÁY TÍNH BẢNG
@@ -67,6 +64,8 @@ Android
 Windows Phone
 windows phone
 WINDOWS PHONE
+Điện thoại di động
+điện thoại di động
 macbook
 MacBook
 MACBOOK
@@ -74,7 +73,6 @@ ThinkPad
 thinkpad
 THINKPAD
 Dell
-dell
 DELL
 laptop
 Laptop
@@ -93,25 +91,15 @@ phần mềm
 wifi
 WIFI
 Wifi
-trang web
-Trang web
-Website
-website
 MS Office
 tập tin
 Tập tin
-Video
-video
-audio
-Audio
-download
-Download
-mp3
-Mp3
 windows
 Windows
-chuột
-Chuột
+chuột quang
+Chuột quang
+chuột game
+Chuột game
 Bàn phím
 bàn phím
 Firefox
@@ -120,8 +108,6 @@ Chrome
 chrome
 trình duyệt
 Trình duyệt
-hình nền
-Hình nền
 điện tử
 Điện tử
 Mobile
@@ -130,3 +116,26 @@ Security
 security
 phần cứng
 Phần cứng
+Game
+game
+Điện thoại di động
+điện thoại di động
+Bluetooth
+Apple
+Lenovo
+máy ảnh
+Máy ảnh
+Canon
+Niken
+ASUS
+Asus
+Microsoft
+Adobe
+ống kính
+Play Store
+Google
+màn hình
+Màn hình
+Ứng dụng
+ứng dụng
+Loa 
