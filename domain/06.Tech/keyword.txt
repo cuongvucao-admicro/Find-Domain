@@ -8,9 +8,6 @@ Ipad
 tablet
 TABLET
 Tablet
-Sony
-sony
-SONY
 Samsung
 samsung
 SAMSUNG
@@ -66,31 +63,18 @@ MACBOOK
 ThinkPad
 thinkpad
 THINKPAD
-<<<<<<< HEAD:domain/07.Tech/keyword.txt
-Dell
-DELL
-=======
  Dell 
  dell 
  DELL 
->>>>>>> 59c86926036ce611a6513816b2794813458d26ae:domain/06.Tech/keyword.txt
 laptop
 Laptop
 LAPTOP
-Máy tính
-máy tính
-MÁY TÍNH
 Acer
 acer
 ACER
 Vaio
 vaio
 VAIO
-Phần mềm
-phần mềm
-wifi
-WIFI
-Wifi
 MS Office
 tập tin
 Tập tin
@@ -108,34 +92,22 @@ Chrome
 chrome
 trình duyệt
 Trình duyệt
-điện tử
-Điện tử
 Mobile
 mobile
 Security
 security
 phần cứng
 Phần cứng
-Game
-game
 Điện thoại di động
 điện thoại di động
 Bluetooth
-Apple
 Lenovo
-máy ảnh
-Máy ảnh
 Canon
 Niken
 ASUS
 Asus
 Microsoft
-Adobe
-ống kính
 Play Store
-Google
 màn hình
 Màn hình
-Ứng dụng
-ứng dụng
 Loa 
