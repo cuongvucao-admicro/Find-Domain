@@ -62,10 +62,12 @@ def process():
 				continue
 			title = array_domain_title[1]
 			source = array_domain_title[0]
-			if source in listSourceSkip:
-				numDoc += 1
-				print numDoc
-				fOutput.write(source + '==========' + title + '==========' + content + '\n')
+			for keyword in listSourceSkip:
+				if keyword in source:
+					numDoc += 1
+					print numDoc
+					fOutput.write(source + '==========' + title + '==========' + content + '\n')
+					break
 
 		f.close()
 	fOutput.close()
