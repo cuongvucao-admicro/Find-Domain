@@ -17,7 +17,7 @@ from os.path import isfile, join
 listKeyword = {}
 listNotKeyword = {}
 listSourceRemove = {}
-listSourceSkip
+listSourceSkip = {}
 
 domain = ''
 
