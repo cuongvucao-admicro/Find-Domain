@@ -63,6 +63,8 @@ def process():
 			title = array_domain_title[1]
 			source = array_domain_title[0]
 			if source in listSourceSkip:
+				numDoc += 1
+				print numDoc
 				fOutput.write(source + '==========' + title + '==========' + content + '\n')
 
 		f.close()
