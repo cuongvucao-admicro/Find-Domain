@@ -16,7 +16,7 @@ from os.path import isfile, join
 
 listKeyword = {}
 listNotKeyword = {}
-listSource = {}
+listSourceRemove = {}
 
 domain = ''
 
@@ -61,7 +61,7 @@ def process():
 				continue
 			title = array_domain_title[1]
 			source = array_domain_title[0]
-			if source in listSource:
+			if source in listSourceRemove:
 				continue
 			keywordMatch = ''
 			for keyword in listKeyword:
@@ -89,7 +89,7 @@ def readSourceRemove():
 	for keyword in f:
 		keyword = keyword.replace('\n', '')
 		# keyword = keyword.encode('utf-8-sig')
-		listSource[keyword] = 1
+		listSourceRemove[keyword] = 1
 	f.close()
 
 if __name__ == '__main__':
