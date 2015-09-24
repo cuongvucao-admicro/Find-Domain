@@ -39,7 +39,8 @@ def readNotKeyword():
 	f.close()
 
 def process():
-	fOutput = codecs.open(domain + 'result_find_by_domain.txt', 'w', encoding = 'utf-8')
+	fOutput = codecs.open('result_find_by_source.txt', 'w', encoding = 'utf-8')
+
 	folderContentFinal = './../../../bigdata/'      
 	listFileContentFinal = [ f for f in listdir(folderContentFinal) if isfile(join(folderContentFinal,f)) and f[0] != '.' ]
 	listFileContentFinal.sort()
@@ -96,18 +97,4 @@ if __name__ == '__main__':
 	readSourceRemove()
 	readSourceSkip()
 	index = 0
-	domain_number = int(sys.argv[1])
-	print 'domain_number : ', domain_number
-	for key in domains:
-		index += 1
-		if index != domain_number:
-			continue
-		domain = 'domain/' + key + '/'
-		listKeyword = {}
-		listNotKeyword = {}
-		readKeyword()
-		readNotKeyword()
-		process()
-		done = time.time()
-		elapsed = done - start
-		print(elapsed)
+	process()
