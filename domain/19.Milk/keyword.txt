@@ -1,13 +1,9 @@
 TH TrueMilk
-Milk
-milk
 truemilk
 true milk
 THTrueMilk
 TH Truemilk
 True Milk
-sữa
-Sữa
 Cô gái hà lan
 Cô Gái Hà Lan
 Dutch Lady
@@ -15,5 +11,35 @@ dutch lady
 DutchLady
 Nutifood
 nutifood
-nestle
 Nestle
+nestle
+sữa tươi
+Sữa tươi
+sữa Tươi
+SỮA TƯƠI
+Sữa Bột
+Sữa bột
+Vinamilk
+vinamilk
+Hanoimilk
+Nutifood
+nutifood
+Sữa chua
+sữa chua
+Dumex Gold
+dumex gold
+Enfagrow
+enfagrow
+Physiolac
+physiolac
+aptamil
+Aptamil
+Meiji
+sữa Việt
+Sữa Việt
+pha sữa
+Pha sữa
+uống sữa
+Uống sữa
+bú sữa
+Bú sữa
